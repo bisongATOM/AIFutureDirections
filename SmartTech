@@ -1,0 +1,13 @@
+[Soil Moisture Sensor]        ↘
+[Temperature/Humidity Sensor] → [IoT Gateway (Raspberry Pi/ESP32)] → 
+[Light Sensor]                ↗     |
+[PH Sensor]                         ↓
+[Rain Gauge]                [Edge AI Preprocessing]
+[Drone (NDVI)]                      ↓
+                              [Send Aggregated Data to Cloud (Optional)]
+                                      ↓
+                              [Cloud AI Model: LSTM for Yield Prediction]
+                                      ↓
+                              [Farmer Dashboard / Mobile Alert]
+                                      ↓
+                              [Actuators: Irrigation, Fertilizer Dispenser]
