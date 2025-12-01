@@ -1,0 +1,34 @@
+AI-Driven IoT – Smart Agriculture System
+System Overview
+An AI-powered IoT system that monitors field conditions and predicts crop yield to optimize irrigation, fertilization, and harvest timing.
+
+Sensors Required
+Sensor Type
+Purpose
+Frequency
+Soil Moisture Sensor
+Measure water content in root zone
+Every 15 min
+Temperature/Humidity
+Monitor microclimate (air)
+Every 10 min
+Light Intensity (LDR)
+Assess photosynthesis potential
+Hourly
+pH Sensor
+Evaluate soil acidity
+Daily
+Rainfall Gauge
+Track natural irrigation
+Real-time
+NDVI Camera (Drone)
+Assess plant health via vegetation index
+Weekly
+AI Model for Crop Yield Prediction
+Model Choice: LSTM (Long Short-Term Memory) Network
+
+Why? Crop growth depends on temporal sequences (e.g., cumulative rainfall over weeks).
+Input Features: Time-series data from sensors (7–30 days window)
+Output: Predicted yield (kg/ha) at harvest
+Training Data: Historical sensor logs + actual yields from past seasons
+Alternative: Hybrid model (CNN for drone imagery + LSTM for sensor data)
